@@ -1,0 +1,36 @@
+﻿<Window x:Class="IntelliVision.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntelliVision"
+        mc:Ignorable="d"
+        Title="IntelliVision" Width="1280" Height="720" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="{x:Null}">
+    <Grid Width="1250" Height="685">
+        <Rectangle Fill="#FF070A09" Width="1250" Height="685" RadiusX="20" RadiusY="20"/>
+
+        <Grid Height="60" VerticalAlignment="Top" Margin="0, 25, 0, 0">
+            <Rectangle Fill="#FF0C100F" Stroke="#19FFFFFF" RadiusX="10" RadiusY="10" Margin="20, 0, 20, 0"/>
+
+            <StackPanel HorizontalAlignment="Left" Margin="50,0,50,0" VerticalAlignment="Center" Orientation="Horizontal">
+                <Path Fill="#FFE4E9EF" Width="28" Height="28" Stretch="Fill" Data="M4.10051 23.8995C6.72601 26.525 10.287 28 14 28C17.713 28 21.274 26.525 23.8995 23.8995C26.525 21.274 28 17.713 28 14C28 10.287 26.525 6.72601 23.8995 4.10051C21.274 1.475 17.713 0 14 0C10.287 0 6.72601 1.475 4.10051 4.10051C1.475 6.72601 0 10.287 0 14C0 17.713 1.475 21.274 4.10051 23.8995ZM13.2885 18.6327L5.56223 15.1988C4.52201 14.7386 4.52201 13.2614 5.56223 12.8012L13.2885 9.36735C13.7448 9.16626 14.2552 9.16626 14.7115 9.36735L22.4378 12.8012C23.478 13.2614 23.478 14.7386 22.4378 15.1988L14.7115 18.6327C14.2591 18.8376 13.7448 18.8337 13.2885 18.6327ZM15.2374 15.2374C15.5656 14.9092 15.75 14.4641 15.75 14C15.75 13.5359 15.5656 13.0908 15.2374 12.7626C14.9093 12.4344 14.4641 12.25 14 12.25C13.5359 12.25 13.0908 12.4344 12.7626 12.7626C12.4344 13.0908 12.25 13.5359 12.25 14C12.25 14.4641 12.4344 14.9092 12.7626 15.2374C13.0908 15.5656 13.5359 15.75 14 15.75C14.4641 15.75 14.9093 15.5656 15.2374 15.2374Z"/>
+
+                <StackPanel Margin="30, 0, 30, 0">
+                    <Button Width="40" Height="40" Background="#FF1B1E1E">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="7.5"/>
+                            </Style>
+                        </Button.Resources>
+                        <Button.BorderBrush>
+                            <LinearGradientBrush EndPoint="0.5,0.5" StartPoint="1,1">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.BorderBrush>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
